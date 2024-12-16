@@ -1,0 +1,14 @@
+{
+  "name": "mark-wood1",
+  "version": "1.0.0",
+  "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/tailwind.css -o ./assets/application.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
