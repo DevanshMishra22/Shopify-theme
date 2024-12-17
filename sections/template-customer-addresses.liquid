@@ -1,11 +1,14 @@
-<div class="max-w-6xl mx-auto px-4 py-12" x-data="{ new_address: false }">
+<div
+  class="max-w-6xl mx-auto px-4 py-12"
+  x-data="{ new_address: false }"
+  x-cloak>
   <div class="flex flex-col md:flex-row items-center justify-between my-5 gap-4">
     <h1 class="text-2xl font-bold text-gray-700">Addresses</h1>
     <button
       x-on:click="new_address = true"
       type="button"
       class="text-white font-medium bg-gray-700 hover:bg-gray-900 px-6 py-2">Create new address</button>
-    <a href="{{ routes.account_url }}" class="text-blue-600 hover:text-blue-800 font-medium underline">Back to                                            
+    <a href="{{ routes.account_url }}" class="text-blue-600 hover:text-blue-800 font-medium underline">Back to                                             
       account</a>
   </div>
 
@@ -19,7 +22,7 @@
       {% form 'customer_address'
         , customer.new_address %}
         <div class="mb-4">
-          <label for="address_fname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">First                                            
+          <label for="address_fname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">First                                             
           name</label>
           <input
             type="text"
@@ -30,7 +33,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="address_lname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Last                                            
+          <label for="address_lname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Last                                             
           name</label>
           <input
             type="text"
@@ -51,7 +54,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="address_address1_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                            
+          <label for="address_address1_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                             
           1</label>
           <input
             type="text"
@@ -62,7 +65,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="address_address2_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                            
+          <label for="address_address2_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                             
           2</label>
           <input
             type="text"
@@ -105,7 +108,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="address_zip_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Postal/ZIP                                            
+          <label for="address_zip_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Postal/ZIP                                             
           code</label>
           <input
             type="text"
@@ -116,7 +119,7 @@
         </div>
 
         <div class="mb-4">
-          <label for="address_phone_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Phone                                            
+          <label for="address_phone_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Phone                                             
           number</label>
           <input
             type="tel"
@@ -131,7 +134,7 @@
             Set as default address</label>
         </div>
         <div class="flex flex-row gap-2">
-          <button type="submit" class="w-full font-medium text-white bg-gray-700 hover:bg-gray-900 px-4 py-2">Create                                            
+          <button type="submit" class="w-full font-medium text-white bg-gray-700 hover:bg-gray-900 px-4 py-2">Create                                             
           address</button>
           <button type="reset" class="w-full font-medium text-gray-700 border border-gray-700 px-4 py-2">Cancel</button>
         </div>
@@ -179,7 +182,7 @@
                   , address %}
 
                   <div class="mb-4">
-                    <label for="address_fname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">First                                            
+                    <label for="address_fname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">First                                             
           name</label>
                     <input
                       type="text"
@@ -190,7 +193,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label for="address_lname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Last                                            
+                    <label for="address_lname_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Last                                             
           name</label>
                     <input
                       type="text"
@@ -211,7 +214,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label for="address_address1_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                            
+                    <label for="address_address1_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                             
           1</label>
                     <input
                       type="text"
@@ -222,7 +225,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label for="address_address2_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                            
+                    <label for="address_address2_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Address                                             
           2</label>
                     <input
                       type="text"
@@ -265,7 +268,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label for="address_zip_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Postal/ZIP                                            
+                    <label for="address_zip_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Postal/ZIP                                             
           code</label>
                     <input
                       type="text"
@@ -276,7 +279,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label for="address_phone_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Phone                                            
+                    <label for="address_phone_{{ form.id }}" class="uppercase text-gray-700 text-xs font-medium mb-2">Phone                                             
           number</label>
                     <input
                       type="tel"
